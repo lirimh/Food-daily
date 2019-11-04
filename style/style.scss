@@ -1,0 +1,179 @@
+$default-color: #fff;
+$background-color: #DFE0E7;
+$font-navbar: 1.2rem;
+$font-color: black;
+$navbar-list-hover: #EDF0F4;
+
+body {
+    background-color: url(../assets/Bg-1.png) !important;
+}
+
+.navbar {
+    background-color: $default-color;
+    float: left;
+    height: 100%;
+    padding: 0px !important;
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -25px;
+
+        img {
+            width: 80%;
+
+        }
+    }
+
+    #menu-navbar {
+        margin-top: -25px;
+        list-style-type: none;
+        padding: 12px 27px 17px 20px;
+        background-color: $navbar-list-hover;
+
+        .pizza {
+
+            float: left;
+            padding-right: 17px;
+
+            img {
+                padding-top: 13px;
+            }
+        }
+
+        span {
+            font-size: $font-navbar;
+            color: $font-color;
+            font-weight: 500;
+        }
+
+        .pizza-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.content {
+    background: url(../assets/BG-1.png);
+    height: auto;
+    float: right;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background: url(../assets/BG-1.png)no-repeat;
+    background-size: cover;
+
+    .boxes {
+        padding-left: 100px;
+
+        .box-livestreams {
+            background-color: $default-color;
+            border-radius: 10px;
+            width: 59.6%;
+            padding: 25px 30px;
+
+            #point {
+                width: 10px;
+                height: 10px;
+                background-color: green;
+                border-radius: 100%;
+                float: left;
+                padding-top: 0px;
+                margin-top: 31px;
+                margin-right: 8px;
+            }
+
+            .tags {
+                float: right;
+                padding-right: 50px;
+                padding-top: 17px;
+            }
+
+            .videos {
+                padding-left: 14px;
+                padding-top: 10px;
+
+                h1 {
+                    text-align: center;
+                    padding-top: 15px;
+                }
+
+                img {
+                    border-radius: 10px;
+                    width: 400px;
+                    height: 252px;
+                }
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .box {
+        background-color: $default-color;
+        height: auto;
+        width: 29%;
+        border-radius: 10px;
+        padding: 25px 30px;
+
+        .legend {
+            display: flex;
+
+            p {
+                padding-top: 15px;
+                padding-right: 55px;
+                font-weight: 500;
+                padding-left: 15px;
+                margin-bottom: 2px;
+            }
+        }
+
+        .legend-details {
+            display: flex;
+
+            p {
+                padding-top: 0px;
+                padding-right: 55px;
+                font-weight: bold;
+                padding-left: 15px;
+            }
+        }
+
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1.0rem;
+            font-weight: 500;
+        }
+
+        #content-box {
+            height: auto;
+
+            btn {
+                width: 97px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.chart--container {
+    height: 100%;
+    width: 100%;
+    min-height: 150px;
+}
+
+.zc-ref {
+    display: none;
+}
