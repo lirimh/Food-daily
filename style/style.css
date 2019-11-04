@@ -30,7 +30,7 @@ body {
 .navbar #menu-navbar {
   margin-top: -25px;
   list-style-type: none;
-  padding: 12px 27px 17px 20px;
+  padding: 12px 5px 17px 20px;
   background-color: #EDF0F4;
 }
 
@@ -84,8 +84,9 @@ body {
 .content .boxes .box-livestreams {
   background-color: #fff;
   border-radius: 10px;
-  width: 59.6%;
-  padding: 25px 30px;
+  width: 52%;
+  height: 480px;
+  padding: 1% 2%;
 }
 
 .content .boxes .box-livestreams #point {
@@ -95,34 +96,36 @@ body {
   border-radius: 100%;
   float: left;
   padding-top: 0px;
-  margin-top: 31px;
+  margin-top: 8%;
   margin-right: 8px;
 }
 
 .content .boxes .box-livestreams .tags {
   float: right;
-  padding-right: 50px;
-  padding-top: 17px;
+  padding-top: 6%;
 }
 
 .content .boxes .box-livestreams .videos {
   padding-left: 14px;
   padding-top: 10px;
+  padding-right: 1%;
+  width: 48%;
 }
 
 .content .boxes .box-livestreams .videos h1 {
   text-align: center;
   padding-top: 15px;
+  font-size: 1.1rem;
 }
 
 .content .boxes .box-livestreams .videos img {
   border-radius: 10px;
-  width: 400px;
-  height: 252px;
+  width: 100%;
 }
 
 .content .boxes .box-livestreams h1 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  padding-top: 3%;
 }
 
 .content .box {

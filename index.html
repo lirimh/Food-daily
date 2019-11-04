@@ -1,335 +1,336 @@
+
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="./style/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
-</head>
-
-<body>
-  <div class="navbar col-2">
-    <div class="logo">
-      <img src="./assets/logo-trans.png" alt="">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="navbar col-2">
+      <div class="logo">
+        <img src="./assets/logo-trans.png" alt="">
+      </div>
+      <ul id="menu-navbar">
+        <img class="pizza mt-3" src="./assets/pizzaIcon.png" alt="">
+        <li>
+          <a href="#">
+            <i class="pizza"></i>
+            <span>Emotions Recognition Dashboard</span>
+          </a>
+        </li>
+      </ul>
+      <div class="pizza-icon ml-4 mr-4">
+        <img class="img-responsive" src="./assets/pizza.png" style="width:100%" alt="">
+      </div>
     </div>
-    <ul id="menu-navbar">
-      <img class="pizza mt-3" src="./assets/pizzaIcon.png" alt="">
-      <li>
-        <a href="#">
-          <i class="pizza"></i>
-          <span>Emotions Recognition Dashboard</span>
-        </a>
-      </li>
-    </ul>
-    <div class="pizza-icon ml-4 mr-4">
-      <img class="img-responsive" src="./assets/pizza.png" style="width:100%" alt="">
-    </div>
-  </div>
-
-  <div class="content col-10">
-    <div class="boxes">
-      <div class="row">
-        <div class="box  mr-4 mt-4">
-          <h1>Cooking Rate</h1>
-          <div id="myChart" class="chart--container"></div>
-        </div>
-        <div class="box  mr-4 mt-4" id="content-box">
-          <h1 class="mb-4">Content</h1>
-          <p>Ingredients</p>
-          <button type="button" class="btn  mb-2 btn-outline-secondary">Greens</button>
-          <button type="button" class="btn mb-2  btn-outline-secondary">Tomatoes</button>
-          <button type="button" class="btn mb-2  btn-outline-secondary">Red Onion</button>
-          <button type="button" class="btn mb-2 btn-outline-secondary">Olive Oil</button>
-          <button type="button" class="btn  btn-outline-secondary">Sausage</button>
-          <div class="border mt-4 mb-2"></div>
-          <p class="mb-2">Distribution</p>
-          <button type="button" class="btn mb-4 btn-outline-secondary">House Pizzeria</button>
-          <div class="border mt-4"></div>
-          <div class="legend">
-            <p>Color</p>
-            <p>Size</p>
-            <p>Sauce</p>
+  
+    <div class="content col-10">
+      <div class="boxes">
+        <div class="row">
+          <div class="box col-3 mr-4 mt-4">
+            <h1>Cooking Rate</h1>
+            <div id="myChart" class="chart--container"></div>
           </div>
-          <div class="legend-details">
-            <p>Red</p>
-            <p>Large</p>
-            <p>Regular</p>
-          </div>
-        </div>
-        <div class="box  mr-4 mt-4">
-          <h1>Quality</h1>
-          <div id="myChart2" class="chart--container"></div>
-        </div>
-        <div class="box-livestreams  mt-4">
-          <h1>Pizza Type Classifier - <b>Live stream cameras</b></h1>
-          <div class="row">
-            <div class="videos mr-3">
-              <img src="./assets/pizza-cooked.jpg"></img>
-              <h1>Before pizza is cooked</h1>
-            </div>
-            <div class="videos ">
-              <img src="./assets/pizza-cooked.jpg"></img>
-              <h1>After pizza is cooked</h1>
-            </div>
-          </div>
-          <div class="border mt-2"></div>
-          <div class="tags">
-            <button type="button" class="btn  btn-outline-secondary">Greens</button>
-            <button type="button" class="btn   btn-outline-secondary">Tomatoes</button>
-            <button type="button" class="btn   btn-outline-secondary">Red Onion</button>
-            <button type="button" class="btn  btn-outline-secondary">Olive Oil</button>
+          <div class="box col-3 mr-4 mt-4" id="content-box">
+            <h1 class="mb-4">Content</h1>
+            <p>Ingredients</p>
+            <button type="button" class="btn  mb-2 btn-outline-secondary">Greens</button>
+            <button type="button" class="btn mb-2  btn-outline-secondary">Tomatoes</button>
+            <button type="button" class="btn mb-2  btn-outline-secondary">Red Onion</button>
+            <button type="button" class="btn mb-2 btn-outline-secondary">Olive Oil</button>
             <button type="button" class="btn  btn-outline-secondary">Sausage</button>
+            <div class="border mt-4 mb-2"></div>
+            <p class="mb-2">Distribution</p>
+            <button type="button" class="btn mb-4 btn-outline-secondary">House Pizzeria</button>
+            <div class="border mt-4"></div>
+            <div class="legend">
+              <p>Color</p>
+              <p>Size</p>
+              <p>Sauce</p>
+            </div>
+            <div class="legend-details">
+              <p>Red</p>
+              <p>Large</p>
+              <p>Regular</p>
+            </div>
           </div>
-          <div id="point"></div>
-          <h1 class="mt-4">4 season pizza</h1>
-
-        </div>
-        <div class="box  ml-4 mt-4">
-          <h1>Content distribution</h1>
-          <div id="myChart3" class="chart--container"></div>
+          <div class="box col-3 mr-4 mt-4">
+            <h1>Quality</h1>
+            <div id="myChart2" class="chart--container"></div>
+          </div>
+          <div class="box-livestreams mt-4">
+            <h1>Pizza Type Classifier - <b>Live stream cameras</b></h1>
+            <div class="row">
+              <div class="videos mr-3">
+                <img src="./assets/pizza-cooked.jpg"></img>
+                <h1>Before pizza is cooked</h1>
+              </div>
+              <div class="videos ">
+                <img src="./assets/pizza-cooked.jpg"></img>
+                <h1>After pizza is cooked</h1>
+              </div>
+            </div>
+            <div class="border mt-2"></div>
+            <div class="tags">
+              <button type="button" class="btn  btn-outline-secondary">Greens</button>
+              <button type="button" class="btn   btn-outline-secondary">Tomatoes</button>
+              <button type="button" class="btn   btn-outline-secondary">Red Onion</button>
+              <button type="button" class="btn  btn-outline-secondary">Olive Oil</button>
+              <button type="button" class="btn  btn-outline-secondary">Sausage</button>
+            </div>
+            <div id="point"></div>
+            <h1 class="mt-4">4 season pizza</h1>
+  
+          </div>
+          <div class="box col-3 ml-4 mt-4">
+            <h1>Content distribution</h1>
+            <div id="myChart3" class="chart--container"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-<script>
-  let chartConfig = {
-    globals: {
-      fontFamily: 'Roboto'
-    },
-    layout: 'h',
-    graphset: [{
-      type: 'pie',
-      backgroundColor: 'transparent',
-      legend: {
-        margin: 'auto auto 16% auto',
-        backgroundColor: 'none',
-        borderWidth: '0px',
-        item: {
-          color: '%backgroundcolor',
-          fontSize: '17px',
-          fontFamily: 'sans-serif'
-        },
-        layout: 'float',
-        marker: {
-          borderRadius: '30px',
-          borderWidth: '0px'
-        },
-        shadow: false
+  </body>
+  <script>
+    let chartConfig = {
+      globals: {
+        fontFamily: 'Roboto'
       },
-      plot: {
-        tooltip: {
-          text: '%v TB',
-          borderRadius: '3px',
+      layout: 'h',
+      graphset: [{
+        type: 'pie',
+        backgroundColor: 'transparent',
+        legend: {
+          margin: 'auto auto 16% auto',
+          backgroundColor: 'none',
+          borderWidth: '0px',
+          item: {
+            color: '%backgroundcolor',
+            fontSize: '17px',
+            fontFamily: 'sans-serif'
+          },
+          layout: 'float',
+          marker: {
+            borderRadius: '30px',
+            borderWidth: '0px'
+          },
           shadow: false
         },
-        valueBox: {
-          visible: false
+        plot: {
+          tooltip: {
+            text: '%v TB',
+            borderRadius: '3px',
+            shadow: false
+          },
+          valueBox: {
+            visible: false
+          },
+          marginRight: '100px',
+          borderWidth: '0px',
+          shadow: false,
+          size: '108px',
+          slice: 100
         },
-        marginRight: '100px',
-        borderWidth: '0px',
-        shadow: false,
-        size: '108px',
-        slice: 100
+        plotarea: {
+          height: '250px',
+          width: '250px',
+          backgroundColor: '#F9F9F9',
+          borderColor: '#DFE1E3',
+          borderRadius: '1000%',
+          borderWidth: '1px',
+          x: '10%'
+        },
+        labels: [{
+          text: '<span style=\'font-size:18px; color:#D9DEE2\'>Total Nodes</span><br>55',
+          fontSize: '60px',
+          fontFamily: 'arial',
+          width: '10%',
+          x: '46%',
+          y: '28%'
+        }],
+        series: [{
+            text: 'Good',
+            values: [36],
+            backgroundColor: '#D9DEE2'
+          },
+          {
+            text: 'Ok',
+            values: [7],
+            backgroundColor: '#EC6221'
+          },
+          {
+            text: 'Bad',
+            values: [12],
+            backgroundColor: '#7BA036'
+          },
+        ]
+      }, ]
+    };
+  
+    let chartConfig2 = {
+      globals: {
+        fontFamily: 'Roboto'
       },
-      plotarea: {
-        height: '250px',
-        width: '250px',
-        backgroundColor: '#F9F9F9',
-        borderColor: '#DFE1E3',
-        borderRadius: '1000%',
-        borderWidth: '1px',
-        x: '17%'
-      },
-      labels: [{
-        text: '<span style=\'font-size:18px; color:#D9DEE2\'>Total Nodes</span><br>55',
-        fontSize: '60px',
-        fontFamily: 'arial',
-        width: '10%',
-        x: '46%',
-        y: '28%'
-      }],
-      series: [{
-          text: 'Good',
-          values: [36],
-          backgroundColor: '#D9DEE2'
-        },
-        {
-          text: 'Ok',
-          values: [7],
-          backgroundColor: '#EC6221'
-        },
-        {
-          text: 'Bad',
-          values: [12],
-          backgroundColor: '#7BA036'
-        },
-      ]
-    }, ]
-  };
-
-  let chartConfig2 = {
-    globals: {
-      fontFamily: 'Roboto'
-    },
-    layout: 'h',
-    graphset: [{
-      type: 'pie',
-      backgroundColor: 'transparent',
-      legend: {
-        margin: 'auto auto 16% auto',
-        backgroundColor: 'none',
-        borderWidth: '0px',
-        item: {
-          color: '%backgroundcolor',
-          fontSize: '17px',
-          fontFamily: 'sans-serif'
-        },
-        layout: 'float',
-        marker: {
-          borderRadius: '30px',
-          borderWidth: '0px'
-        },
-        shadow: false
-      },
-      plot: {
-        tooltip: {
-          text: '%v TB',
-          borderRadius: '3px',
+      layout: 'h',
+      graphset: [{
+        type: 'pie',
+        backgroundColor: 'transparent',
+        legend: {
+          margin: 'auto auto 16% auto',
+          backgroundColor: 'none',
+          borderWidth: '0px',
+          item: {
+            color: '%backgroundcolor',
+            fontSize: '17px',
+            fontFamily: 'sans-serif'
+          },
+          layout: 'float',
+          marker: {
+            borderRadius: '30px',
+            borderWidth: '0px'
+          },
           shadow: false
         },
-        valueBox: {
-          visible: false
+        plot: {
+          tooltip: {
+            text: '%v TB',
+            borderRadius: '3px',
+            shadow: false
+          },
+          valueBox: {
+            visible: false
+          },
+          marginRight: '100px',
+          borderWidth: '0px',
+          shadow: false,
+          size: '108px',
+          slice: 100
         },
-        marginRight: '100px',
-        borderWidth: '0px',
-        shadow: false,
-        size: '108px',
-        slice: 100
+        plotarea: {
+          height: '250px',
+          width: '250px',
+          backgroundColor: '#F9F9F9',
+          borderColor: '#DFE1E3',
+          borderRadius: '1000%',
+          borderWidth: '1px',
+          x: '10%'
+        },
+        labels: [{
+          text: '<span style=\'font-size:18px; color:#D9DEE2\'>Total Nodes</span><br>61',
+          fontSize: '60px',
+          fontFamily: 'arial',
+          width: '10%',
+          x: '46%',
+          y: '28%'
+        }],
+        series: [{
+            text: 'Good',
+            values: [68],
+            backgroundColor: '#7BA036'
+          },
+          {
+            text: 'Bad',
+            values: [32],
+            backgroundColor: '#EC6221'
+          },
+        ]
+      }, ]
+    };
+  
+    let chartConfig3 = {
+      globals: {
+        fontFamily: 'Roboto'
       },
-      plotarea: {
-        height: '250px',
-        width: '250px',
-        backgroundColor: '#F9F9F9',
-        borderColor: '#DFE1E3',
-        borderRadius: '1000%',
-        borderWidth: '1px',
-        x: '17%'
-      },
-      labels: [{
-        text: '<span style=\'font-size:18px; color:#D9DEE2\'>Total Nodes</span><br>61',
-        fontSize: '60px',
-        fontFamily: 'arial',
-        width: '10%',
-        x: '46%',
-        y: '28%'
-      }],
-      series: [{
-          text: 'Good',
-          values: [68],
-          backgroundColor: '#7BA036'
-        },
-        {
-          text: 'Bad',
-          values: [32],
-          backgroundColor: '#EC6221'
-        },
-      ]
-    }, ]
-  };
-
-  let chartConfig3 = {
-    globals: {
-      fontFamily: 'Roboto'
-    },
-    layout: 'h',
-    graphset: [{
-      type: 'pie',
-      backgroundColor: 'transparent',
-      legend: {
-        margin: 'auto auto 16% auto',
-        backgroundColor: 'none',
-        borderWidth: '0px',
-        item: {
-          color: '%backgroundcolor',
-          fontSize: '17px',
-          fontFamily: 'sans-serif'
-        },
-        layout: 'float',
-        marker: {
-          borderRadius: '30px',
-          borderWidth: '0px'
-        },
-        shadow: false
-      },
-      plot: {
-        tooltip: {
-          text: '%v TB',
-          borderRadius: '3px',
+      layout: 'h',
+      graphset: [{
+        type: 'pie',
+        backgroundColor: 'transparent',
+        legend: {
+          margin: 'auto auto 16% auto',
+          backgroundColor: 'none',
+          borderWidth: '0px',
+          item: {
+            color: '%backgroundcolor',
+            fontSize: '17px',
+            fontFamily: 'sans-serif'
+          },
+          layout: 'float',
+          marker: {
+            borderRadius: '30px',
+            borderWidth: '0px'
+          },
           shadow: false
         },
-        valueBox: {
-          visible: false
+        plot: {
+          tooltip: {
+            text: '%v TB',
+            borderRadius: '3px',
+            shadow: false
+          },
+          valueBox: {
+            visible: false
+          },
+          marginRight: '100px',
+          borderWidth: '0px',
+          shadow: false,
+          size: '108px',
+          slice: 100
         },
-        marginRight: '100px',
-        borderWidth: '0px',
-        shadow: false,
-        size: '108px',
-        slice: 100
-      },
-      plotarea: {
-        height: '250px',
-        width: '250px',
-        backgroundColor: '#F9F9F9',
-        borderColor: '#DFE1E3',
-        borderRadius: '1000%',
-        borderWidth: '1px',
-        x: '17%'
-      },
-      labels: [{
-        text: '<span style=\'font-size:18px; color:#D9DEE2\'>Total Nodes</span><br>36',
-        fontSize: '60px',
-        fontFamily: 'arial',
-        width: '10%',
-        x: '46%',
-        y: '28%'
-      }],
-      series: [{
-          text: 'Good',
-          values: [72],
-          backgroundColor: '#7BA036'
+        plotarea: {
+          height: '250px',
+          width: '250px',
+          backgroundColor: '#F9F9F9',
+          borderColor: '#DFE1E3',
+          borderRadius: '1000%',
+          borderWidth: '1px',
+          x: '10%'
         },
-        {
-          text: 'Bad',
-          values: [28],
-          backgroundColor: '#EC6221'
-        },
-      ]
-    }, ]
-  };
-
-  zingchart.render({
-    id: 'myChart',
-    data: chartConfig,
-    height: "100%",
-    width: "100%"
-  });
-
-  zingchart.render({
-    id: 'myChart2',
-    data: chartConfig2,
-    height: "100%",
-    width: "100%"
-  });
-
-  zingchart.render({
-    id: 'myChart3',
-    data: chartConfig3,
-    height: "100%",
-    width: "100%"
-  });
-</script>
-
-</html>
+        labels: [{
+          text: '<span style=\'font-size:18px; color:#D9DEE2\'>Total Nodes</span><br>36',
+          fontSize: '60px',
+          fontFamily: 'arial',
+          width: '10%',
+          x: '46%',
+          y: '28%'
+        }],
+        series: [{
+            text: 'Good',
+            values: [72],
+            backgroundColor: '#7BA036'
+          },
+          {
+            text: 'Bad',
+            values: [28],
+            backgroundColor: '#EC6221'
+          },
+        ]
+      }, ]
+    };
+  
+    zingchart.render({
+      id: 'myChart',
+      data: chartConfig,
+      height: "100%",
+      width: "100%"
+    });
+  
+    zingchart.render({
+      id: 'myChart2',
+      data: chartConfig2,
+      height: "100%",
+      width: "100%"
+    });
+  
+    zingchart.render({
+      id: 'myChart3',
+      data: chartConfig3,
+      height: "100%",
+      width: "100%"
+    });
+  </script>
+  
+  </html>

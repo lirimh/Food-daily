@@ -29,7 +29,7 @@ body {
     #menu-navbar {
         margin-top: -25px;
         list-style-type: none;
-        padding: 12px 27px 17px 20px;
+        padding: 12px 5px 17px 20px;
         background-color: $navbar-list-hover;
 
         .pizza {
@@ -76,8 +76,9 @@ body {
         .box-livestreams {
             background-color: $default-color;
             border-radius: 10px;
-            width: 59.6%;
-            padding: 25px 30px;
+            width: 52%;
+            height: 480px;
+            padding: 1% 2%;
 
             #point {
                 width: 10px;
@@ -86,34 +87,36 @@ body {
                 border-radius: 100%;
                 float: left;
                 padding-top: 0px;
-                margin-top: 31px;
+                margin-top: 8%;
                 margin-right: 8px;
             }
 
             .tags {
                 float: right;
-                padding-right: 50px;
-                padding-top: 17px;
+                padding-top: 6%;
             }
 
             .videos {
                 padding-left: 14px;
                 padding-top: 10px;
+                padding-right: 1%;
+                width: 48%;
 
                 h1 {
                     text-align: center;
                     padding-top: 15px;
+                    font-size: 1.1rem;
                 }
 
                 img {
                     border-radius: 10px;
-                    width: 400px;
-                    height: 252px;
+                    width: 100%;
                 }
             }
 
             h1 {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
+                padding-top: 3%;
             }
         }
     }
