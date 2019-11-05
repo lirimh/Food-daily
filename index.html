@@ -8,6 +8,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+
   </head>
   
   <body>
@@ -48,7 +49,7 @@
             <p class="mb-2">Distribution</p>
             <button type="button" class="btn mb-4 btn-outline-secondary">House Pizzeria</button>
             <div class="border mt-4"></div>
-            <div class="legend">
+            <!-- <div class="legend">
               <p>Color</p>
               <p>Size</p>
               <p>Sauce</p>
@@ -57,7 +58,14 @@
               <p>Red</p>
               <p>Large</p>
               <p>Regular</p>
-            </div>
+            </div> -->
+          
+            <ul>
+              <li>Color</li>
+              <li>Size</li>
+              <li>Sauce</li>
+            </ul>
+        
           </div>
           <div class="box col-3 mr-4 mt-4">
             <h1>Quality</h1>
@@ -89,248 +97,13 @@
           </div>
           <div class="box col-3 ml-4 mt-4">
             <h1>Content distribution</h1>
-            <div id="myChart3" class="chart--container"></div>
+           <div id="myChart3" class="chart--container"></div>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script>
-    let chartConfig = {
-      globals: {
-        fontFamily: 'Roboto'
-      },
-      layout: 'h',
-      graphset: [{
-        type: 'pie',
-        backgroundColor: 'transparent',
-        legend: {
-          margin: 'auto auto 16% auto',
-          backgroundColor: 'none',
-          borderWidth: '0px',
-          item: {
-            color: '%backgroundcolor',
-            fontSize: '17px',
-            fontFamily: 'sans-serif'
-          },
-          layout: 'float',
-          marker: {
-            borderRadius: '30px',
-            borderWidth: '0px'
-          },
-          shadow: false
-        },
-        plot: {
-          tooltip: {
-            text: '%v TB',
-            borderRadius: '3px',
-            shadow: false
-          },
-          valueBox: {
-            visible: false
-          },
-          marginRight: '100px',
-          borderWidth: '0px',
-          shadow: false,
-          size: '108px',
-          slice: 100
-        },
-        plotarea: {
-          height: '250px',
-          width: '250px',
-          backgroundColor: '#F9F9F9',
-          borderColor: '#DFE1E3',
-          borderRadius: '1000%',
-          borderWidth: '1px',
-          x: '10%'
-        },
-        labels: [{
-          text: '<span style=\'font-size:18px; color:#D9DEE2\'>Total Nodes</span><br>55',
-          fontSize: '60px',
-          fontFamily: 'arial',
-          width: '10%',
-          x: '46%',
-          y: '28%'
-        }],
-        series: [{
-            text: 'Good',
-            values: [36],
-            backgroundColor: '#D9DEE2'
-          },
-          {
-            text: 'Ok',
-            values: [7],
-            backgroundColor: '#EC6221'
-          },
-          {
-            text: 'Bad',
-            values: [12],
-            backgroundColor: '#7BA036'
-          },
-        ]
-      }, ]
-    };
-  
-    let chartConfig2 = {
-      globals: {
-        fontFamily: 'Roboto'
-      },
-      layout: 'h',
-      graphset: [{
-        type: 'pie',
-        backgroundColor: 'transparent',
-        legend: {
-          margin: 'auto auto 16% auto',
-          backgroundColor: 'none',
-          borderWidth: '0px',
-          item: {
-            color: '%backgroundcolor',
-            fontSize: '17px',
-            fontFamily: 'sans-serif'
-          },
-          layout: 'float',
-          marker: {
-            borderRadius: '30px',
-            borderWidth: '0px'
-          },
-          shadow: false
-        },
-        plot: {
-          tooltip: {
-            text: '%v TB',
-            borderRadius: '3px',
-            shadow: false
-          },
-          valueBox: {
-            visible: false
-          },
-          marginRight: '100px',
-          borderWidth: '0px',
-          shadow: false,
-          size: '108px',
-          slice: 100
-        },
-        plotarea: {
-          height: '250px',
-          width: '250px',
-          backgroundColor: '#F9F9F9',
-          borderColor: '#DFE1E3',
-          borderRadius: '1000%',
-          borderWidth: '1px',
-          x: '10%'
-        },
-        labels: [{
-          text: '<span style=\'font-size:18px; color:#D9DEE2\'>Total Nodes</span><br>61',
-          fontSize: '60px',
-          fontFamily: 'arial',
-          width: '10%',
-          x: '46%',
-          y: '28%'
-        }],
-        series: [{
-            text: 'Good',
-            values: [68],
-            backgroundColor: '#7BA036'
-          },
-          {
-            text: 'Bad',
-            values: [32],
-            backgroundColor: '#EC6221'
-          },
-        ]
-      }, ]
-    };
-  
-    let chartConfig3 = {
-      globals: {
-        fontFamily: 'Roboto'
-      },
-      layout: 'h',
-      graphset: [{
-        type: 'pie',
-        backgroundColor: 'transparent',
-        legend: {
-          margin: 'auto auto 16% auto',
-          backgroundColor: 'none',
-          borderWidth: '0px',
-          item: {
-            color: '%backgroundcolor',
-            fontSize: '17px',
-            fontFamily: 'sans-serif'
-          },
-          layout: 'float',
-          marker: {
-            borderRadius: '30px',
-            borderWidth: '0px'
-          },
-          shadow: false
-        },
-        plot: {
-          tooltip: {
-            text: '%v TB',
-            borderRadius: '3px',
-            shadow: false
-          },
-          valueBox: {
-            visible: false
-          },
-          marginRight: '100px',
-          borderWidth: '0px',
-          shadow: false,
-          size: '108px',
-          slice: 100
-        },
-        plotarea: {
-          height: '250px',
-          width: '250px',
-          backgroundColor: '#F9F9F9',
-          borderColor: '#DFE1E3',
-          borderRadius: '1000%',
-          borderWidth: '1px',
-          x: '10%'
-        },
-        labels: [{
-          text: '<span style=\'font-size:18px; color:#D9DEE2\'>Total Nodes</span><br>36',
-          fontSize: '60px',
-          fontFamily: 'arial',
-          width: '10%',
-          x: '46%',
-          y: '28%'
-        }],
-        series: [{
-            text: 'Good',
-            values: [72],
-            backgroundColor: '#7BA036'
-          },
-          {
-            text: 'Bad',
-            values: [28],
-            backgroundColor: '#EC6221'
-          },
-        ]
-      }, ]
-    };
-  
-    zingchart.render({
-      id: 'myChart',
-      data: chartConfig,
-      height: "100%",
-      width: "100%"
-    });
-  
-    zingchart.render({
-      id: 'myChart2',
-      data: chartConfig2,
-      height: "100%",
-      width: "100%"
-    });
-  
-    zingchart.render({
-      id: 'myChart3',
-      data: chartConfig3,
-      height: "100%",
-      width: "100%"
-    });
-  </script>
-  
+ 
+  <script src="./js/script.js"></script>
+
   </html>
